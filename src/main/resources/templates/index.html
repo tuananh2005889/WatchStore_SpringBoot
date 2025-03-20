@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Danh sách người dùng</title>
 </head>
 <body>
-    <h1>Danh sách người dùng</h1>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Tên</th>
-            <th>Email</th>
-        </tr>
-        <tr th:each="user : ${users}">
-            <td th:text="${user.id}"></td>
-            <td th:text="${user.name}"></td>
-            <td th:text="${user.email}"></td>
-        </tr>
-    </table>
-
-    <h2>Thêm người dùng</h2>
-    <form action="/addUser" method="post">
-        <label>Tên: </label><input type="text" name="name" required>
-        <label>Email: </label><input type="email" name="email" required>
-        <button type="submit">Thêm</button>
-    </form>
+    <div class="w-full h-10">
+           <div th:replace="HomePage/navbar.html"></div>
+    </div>
 </body>
 </html>
