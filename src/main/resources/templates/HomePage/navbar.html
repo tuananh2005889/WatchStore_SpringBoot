@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-<body>
     <style>
         .bg-primary { background-color: #415057; }
-        .color-primary { color: #415057; }
-        .color-secondary { color: #33353A; }
+        .text-primary { color: #415057; }
+        .text-secondary { color: #33353A; }
     </style>
-    
-    <div class="w-full h-16 text-[17px] bg-primary flex p-1">
-        <!-- <a href="/Login" class=" pl-12">
-            <img src="/logo.png" class="cursor-pointer w-16 h-auto ">
-        </a> -->
-         <div class="flex space-x-20 h-full justify-center items-center w-full">
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Contact</a>
-            <a href="/">Login</a>
-         </div>
-    </div>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-primary py-3 shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6">
+          <div class="flex items-start justify-start">
+            <a href="/">
+                <img src="/logo.png" alt="Logo" class="w-16 h-auto cursor-pointer">
+            </a>
+          </div>
+            <div class="flex space-x-8 text-white font-medium">
+                <a href="/" class="hover:text-red-400 transition-all duration-300">Home</a>
+                <a href="/" class="hover:text-red-400 transition-all duration-300">About</a>
+                <a href="/" class="hover:text-red-400 transition-all duration-300">Contact</a>
+                <a href="/" class="hover:text-red-400 transition-all duration-300">Login</a>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
